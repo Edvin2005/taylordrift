@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: black ;
+    --color2: #fff ;
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+ .icon img{
+    width:35px;}
+
+.logo img {width: 150px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media(max-width: 710px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+body{
+background: radial-gradient(circle, #ff0000, #0000ff);
+}
+
+@media(max-width: 710px){
+    .hej{
+        width: 100%;
+        height: 100px;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hej {
+  
+        width:500px;
+        height: 500px;
+        background-color: red;
+        margin-right: 10px;
+        margin-top: 70px;
+        float: left;
+       
+   
+   }
+   
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.uper {
+    height: 70px;
+    color: #fff;
+}
+.news {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 20px;
+}
+
+.events {
+    background-color: #0084ff;
+    color: #fff;
+    padding: 20px;
+}
+
+.popular {
+    background-color: #333;
+    color:#fff;
+    padding: 20px;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+footer{
+    padding: 15px;
+    background-color: #444141;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer p{
+    color: #7b838a;
+}
+
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscribe a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    background-color: #fff;
+    font-weight: 600;
+}
+footer .subscribe a.yellow{
+    color: #2c2c2c;
+    background: #FDC93B;
+    transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+.ilogo img{
+    width: 50px;
+    outline: none;
+}
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p{
+    color: #fff;
+}
+
+footer .copyright .pro-link{
+    margin-top: 0px;
+  }
+
+footer .copyright .pro-link i{
+    background-color: #5f7185;
+    color: #fff;
+
+}
+
+footer .copyright .pro-link i:hover{
+    background-color: #FDC93B;
+    color: #2c2c2c;
+}
